@@ -1,0 +1,24 @@
+h4:hover
+{
+    color:red;
+}
+.leftBorder
+{
+    border-left-style:solid;
+    border-width: 5px;
+    border-color:red;
+}
+h4
+{
+    color:white;
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+h4:hover
+{
+     font-size:180% ;
+}
+a
+{
+    text-decoration: none;
+}
