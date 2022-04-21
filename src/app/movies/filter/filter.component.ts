@@ -4,6 +4,9 @@ import { faStarHalfStroke} from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import { faLessThan } from '@fortawesome/free-solid-svg-icons';
+import MovieResponse from '../models/movieResponse';
+import {MovieDataService} from  '../movie-data.service';
+
 
 @Component({
   selector: 'app-filter',
@@ -16,9 +19,23 @@ faStarHalfStroke=faStarHalfStroke;
 faStar=faStar;
 faGreaterThan=faGreaterThan;
 faLessThan=faLessThan;
-  constructor() { }
+data!:MovieResponse;
+  constructor(private movieservice:MovieDataService) {
+   
+   }
+mediumRatingFilter()
+{
+  this.movieservice.mediumRatingFilter();
+}
 
+highRatingFilter()
+{
+  this.movieservice.highRatingFilter();
+}
+allRatingFilter()
+{
+  this.movieservice.allRatingFilter();
+}
   ngOnInit(): void {
   }
-
 }

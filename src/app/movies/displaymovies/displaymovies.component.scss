@@ -1,0 +1,40 @@
+.detail-wrapper{
+height: 70vh;
+}
+.cardleft {
+    color:white;
+    width:30%;
+    border:2px solid;
+    border-color:white;
+    border-radius:4px;
+    background-color:black ;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.cardright
+{
+    height:100% ;
+    color:white;
+    border:2px solid;
+    border-color:white;
+    border-radius:2px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.cardright:hover,.cardleft:hover
+{
+    border-color:red;
+    transform: scale(1.02);
+    color:red;
+}
+p{
+    text-align:left;
+}
+
+.poster
+{
+    height: 30vh;   
+}
+
+
+
+
+

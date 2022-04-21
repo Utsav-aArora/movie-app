@@ -1,0 +1,18 @@
+<div class="container-fluid mt-5">
+    <div class="d-flex flex-wrap detail-wrapper pb-5 justify-content-center">
+      <div class="cardleft p-3 m-4">
+        <h2 class="pb-2 text-center">{{getData()[currentMovie].title}}</h2> 
+        <div>
+          <div>
+            <p><span class="fw-bold">Date-</span> {{getData()[currentMovie].release_date}}</p>    
+            <p><span class="fw-bold">Adult-</span> {{getData()[currentMovie].adult?'Yes':'No'}}</p>
+            <p><span class="fw-bold">Vote-</span> {{getData()[currentMovie].vote_count}}</p>
+            <p><span class="fw-bold">Average Vote-</span> {{getData()[currentMovie].vote_average}} <fa-icon [icon]="faStar"></fa-icon></p>
+            <p><span class="fw-bold">Language-</span> {{getData()[currentMovie].original_language}}</p>
+            <p class="pt-2">{{getData()[currentMovie].overview}}</p>  
+          </div>
+        </div> 
+      </div>
+      <div class="cardright m-4"><img src="https://image.tmdb.org/t/p/original/{{getData()[currentMovie].backdrop_path}}"height="100%" ></div>  
+    </div>  
+</div>

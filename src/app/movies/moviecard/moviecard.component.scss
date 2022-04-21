@@ -6,7 +6,6 @@
     cursor: pointer;
     color:white;
     padding: 2px; 
-    height: 61vh;
     margin-bottom:15px ;
 }
 .card:hover
@@ -14,8 +13,9 @@
      transform: scale(1.05);
      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
      color:red;
-     background-color:red;
+     background-color:red; 
 }
+
 #bottom {
     position:absolute;                 
     bottom:0; 
@@ -27,3 +27,18 @@ a
 {
     text-decoration: none;
 }
+
+.btn {
+    position: absolute;
+    top: -1.4%;
+    right:-3.9%;
+    color:white;
+    opacity: 0.5;
+  
+  }
+ .btn:hover
+ {
+    color:red ;
+    opacity:1;
+ } 
+ 

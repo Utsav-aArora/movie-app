@@ -6,9 +6,10 @@ import { OpenedmovieComponent } from './movies/openedmovie/openedmovie.component
 
 const routes: Routes = [
   { path: 'movie', component: MovieComponent },
-  { path: 'name', component: OpenedmovieComponent },
+  { path: 'movie/:movieIndex', component: OpenedmovieComponent },
   { path: '',   redirectTo: '/movie', pathMatch: 'full' },
-  { path: '**', component:ErrorpageComponent },  
+  { path: '**', component:ErrorpageComponent },
+
 ];
 
 @NgModule({

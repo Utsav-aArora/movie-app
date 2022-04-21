@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MoviecardComponent } from './moviecard/moviecard.component';
 import { FilterComponent } from './filter/filter.component';
 import { RouterModule } from '@angular/router';
+import { DisplaymoviesComponent } from './displaymovies/displaymovies.component';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { RouterModule } from '@angular/router';
     OpenedmovieComponent,
     HeaderComponent,
     MoviecardComponent, 
-    FilterComponent,
+    FilterComponent, DisplaymoviesComponent,
   ],
   imports: [
     CommonModule,
